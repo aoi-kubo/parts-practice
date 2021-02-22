@@ -1,0 +1,179 @@
+.body {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 20px;
+  color: #333;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header {
+  padding: 10px 30px;
+  height: 50px;
+}
+h1 {
+  font-size: 2em;
+}
+.header-nav {
+  width: 35%;
+}
+.header.flex {
+  align-items: center;
+}
+
+.mv {
+  position: relative;
+  height: 500px;
+}
+.outer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/brush-96240_1280.jpg);
+  width: 60%;
+  height: 500px;
+}
+.black{
+  position: absolute;
+  left: -55%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  z-index: -1;
+}
+.white{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.white::after{
+  position: absolute;
+  left: -55%;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "Lorem ipsum dolor, sit amet\A consectetur adipisicing elit.";
+  white-space: pre;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1;
+}
+
+.blob {
+  text-align: center;
+  padding-bottom: 30px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.blob-title {
+  padding: 60px 0;
+  font-size: 2.5em;
+}
+.blob .flex {
+  justify-content: space-around;
+}
+
+.square {
+  position: relative;
+  margin: 0 10px;
+  width: 25%;
+  height: 300px;
+}
+
+.square span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.linkedin span {
+  background: #f07d6e96;
+  border-radius: 
+  68% 32% 67% 33% / 49% 56% 44% 51%;
+}
+.twitter span {
+  background: #84cdfa96;
+  border-radius: 
+  43% 57% 36% 64% / 49% 29% 71% 51%;
+}
+.github span {
+  background: #5ad1cd96;
+  border-radius: 
+  64% 36% 26% 74% / 57% 39% 61% 43% ;
+}
+.square:hover span:nth-child(1) {
+  animation: animate 6s linear infinite;
+}
+.square:hover span:nth-child(2) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 4s linear infinite;
+}
+.square:hover span:nth-child(3) {
+  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  animation: animate2 10s linear infinite;
+}
+
+.content {
+  position: relative;
+  padding: 60px;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.content a {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  padding: 6px 18px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+      transform: rotate(360deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+/* 
+.blob:after {
+  content: "";
+  top: -20%;
+  left: -10%;
+  width: 300px;
+  height: 200px;
+  background: rgb(228, 228, 228);
+  position: absolute;
+  border-radius: 20% 80% 26% 74% / 57% 70% 30% 43%;
+  transform: rotate(30deg);
+} */
+
+
+
+
+
