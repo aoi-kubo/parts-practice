@@ -10,6 +10,10 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+.title {
+  padding: 60px 0;
+  font-size: 2.5em;
+}
 
 .header {
   padding: 10px 30px;
@@ -66,15 +70,12 @@ h1 {
 
 .blob {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   width: 95%;
   margin: 0 auto;
   position: relative;
 }
-.blob-title {
-  padding: 60px 0;
-  font-size: 2.5em;
-}
+
 .blob .flex {
   justify-content: space-around;
 }
@@ -173,7 +174,37 @@ h1 {
   transform: rotate(30deg);
 } */
 
+.draw {
+  height: 630px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: rgb(201, 200, 200);
+}
 
+.svg-content {
+  position: relative;
+  width: 30%;
+  height: 450px;
+}
 
-
+svg {
+  position: absolute;
+  top: -38%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  stroke: #fff;
+  stroke-width: 2px;
+  fill: none;
+  animation: fill 0.5s ease forwards 3s;
+}
+/* @keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to{
+    fill: rgb(21, 55, 83);
+  }
+}  */
 

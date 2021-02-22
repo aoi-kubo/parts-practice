@@ -1,21 +1,21 @@
 $(function() {
   // // スクロール
-  var $doc = $(document),
-        $win = $(window),
-        $svg = $('svg').drawsvg(),
-        max = $doc.height() - $win.height();
+  // var $doc = $(document),
+  //       $win = $(window),
+  //       $svg = $('svg').drawsvg(),
+  //       max = $doc.height() - $win.height();
   
-        $win.on('scroll', function() {
-          var p = $win.scrollTop() / max;
-          $svg.drawsvg('progress', p);
-        });
+  //       $win.on('scroll', function() {
+  //         var p = $win.scrollTop() / max;
+  //         $svg.drawsvg('progress', p);
+  //       });
 
   // animation
-  // var $svg = $('svg').drawsvg({
-  //   // 秒数指定
-  //   duration: 2000
-  // });
-  // $svg.drawsvg('animate');
+  var $svg = $('svg').drawsvg({
+    // 秒数指定
+    duration: 2000
+  });
+  $svg.drawsvg('animate');
 
   // $(window).scroll(function () { 
 
